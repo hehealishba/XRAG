@@ -1,0 +1,516 @@
+[
+  {
+    "question": "What are the risk controls for electric van leases and early termination terms?",
+    "answer": "Using offer 'EV fleet lease with residual guarantee' for SME delivery fleets on Battery electric vans, term 48 months at 4.5% APR with residual 48%. Early termination: 60 day notice; 2-month fee cap. Risk controls: Require OEM telematics feed for mileage & battery health, Escrow equal to one monthly payment for first 6 months. Pricing levers: +0.4% APR if fleet size < 10 vehicles, -0.25% APR when delivering carbon reporting quarterly.",
+    "sources": [
+      {
+        "doc_id": "offer-ev-fleet-2025",
+        "title": "EV fleet lease with residual guarantee",
+        "score": 0.1636,
+        "source": "AutoFinance Lab Q1/2025 demo dataset"
+      }
+    ],
+    "evidence": [
+      {
+        "labels": [
+          "Document"
+        ],
+        "relationship_path": [
+          "HAS_DOC"
+        ],
+        "properties": {
+          "id": "offer-ev-fleet-2025",
+          "source": "AutoFinance Lab Q1/2025 demo dataset",
+          "text": "EV fleet lease with residual guarantee for SME delivery fleets using Battery electric vans. Term 48 months, 25000 miles/year. Base APR 4.5%, residual 48%. Early termination: 60 day notice; 2-month fee cap. Risk rules: Require OEM telematics feed for mileage & battery health, Escrow equal to one monthly payment for first 6 months, Decline applicants with >1 insolvency event in last 3 years. Pricing adjusters: +0.4% APR if fleet size < 10 vehicles, -0.25% APR when delivering carbon reporting quarterly. FAQ: Designed for SMEs running electric delivery vans; residual risk covered by remarketing partner.",
+          "title": "EV fleet lease with residual guarantee"
+        }
+      },
+      {
+        "labels": [
+          "Segment"
+        ],
+        "relationship_path": [
+          "FOR_SEGMENT"
+        ],
+        "properties": {
+          "name": "SME delivery fleets"
+        }
+      },
+      {
+        "labels": [
+          "Vehicle"
+        ],
+        "relationship_path": [
+          "FOR_VEHICLE"
+        ],
+        "properties": {
+          "type": "Battery electric vans"
+        }
+      },
+      {
+        "labels": [
+          "Policy"
+        ],
+        "relationship_path": [
+          "EARLY_TERMINATION"
+        ],
+        "properties": {
+          "name": "60 day notice; 2-month fee cap"
+        }
+      },
+      {
+        "labels": [
+          "CreditModel"
+        ],
+        "relationship_path": [
+          "USES_CREDIT_MODEL"
+        ],
+        "properties": {
+          "name": "Segment score must exceed 640; max DTI 45%"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Require OEM telematics feed for mileage & battery health"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Escrow equal to one monthly payment for first 6 months"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Decline applicants with >1 insolvency event in last 3 years"
+        }
+      },
+      {
+        "labels": [
+          "PricingAdjuster"
+        ],
+        "relationship_path": [
+          "HAS_PRICING_ADJUSTER"
+        ],
+        "properties": {
+          "rule": "+0.4% APR if fleet size < 10 vehicles"
+        }
+      },
+      {
+        "labels": [
+          "PricingAdjuster"
+        ],
+        "relationship_path": [
+          "HAS_PRICING_ADJUSTER"
+        ],
+        "properties": {
+          "rule": "-0.25% APR when delivering carbon reporting quarterly"
+        }
+      }
+    ]
+  },
+  {
+    "question": "Show the pics of cats",
+    "answer": "No matching lease knowledge found in graph. Please narrow the question.",
+    "sources": [],
+    "evidence": []
+  },
+  {
+    "question": "How do cross-border truck leases handle FX risk and early termination?",
+    "answer": "Using offer 'Cross-border lease with FX guardrails' for Export-focused manufacturers on Medium duty trucks, term 48 months at 6.3% APR with residual 45%. Early termination: FX breach clause: unwind allowed if hedges fail beyond 8%. Risk controls: Local guarantor required in each operating country, Monitor trade finance line utilization monthly. Pricing levers: -0.2% APR if hedged with rated counterparty, +0.4% APR when receivables insurance absent.",
+    "sources": [
+      {
+        "doc_id": "offer-crossborder-lease",
+        "title": "Cross-border lease with FX guardrails",
+        "score": 0.384,
+        "source": "AutoFinance Lab Q1/2025 demo dataset"
+      }
+    ],
+    "evidence": [
+      {
+        "labels": [
+          "Document"
+        ],
+        "relationship_path": [
+          "HAS_DOC"
+        ],
+        "properties": {
+          "id": "offer-crossborder-lease",
+          "source": "AutoFinance Lab Q1/2025 demo dataset",
+          "text": "Cross-border lease with FX guardrails for Export-focused manufacturers using Medium duty trucks. Term 48 months, 40000 miles/year. Base APR 6.3%, residual 45%. Early termination: FX breach clause: unwind allowed if hedges fail beyond 8%. Risk rules: Local guarantor required in each operating country, Monitor trade finance line utilization monthly, Cap uninsured export receivables at 20% of revenue. Pricing adjusters: -0.2% APR if hedged with rated counterparty, +0.4% APR when receivables insurance absent. FAQ: Mitigates FX and cross-border credit risk for exporters running trucks.",
+          "title": "Cross-border lease with FX guardrails"
+        }
+      },
+      {
+        "labels": [
+          "Segment"
+        ],
+        "relationship_path": [
+          "FOR_SEGMENT"
+        ],
+        "properties": {
+          "name": "Export-focused manufacturers"
+        }
+      },
+      {
+        "labels": [
+          "Vehicle"
+        ],
+        "relationship_path": [
+          "FOR_VEHICLE"
+        ],
+        "properties": {
+          "type": "Medium duty trucks"
+        }
+      },
+      {
+        "labels": [
+          "Policy"
+        ],
+        "relationship_path": [
+          "EARLY_TERMINATION"
+        ],
+        "properties": {
+          "name": "FX breach clause: unwind allowed if hedges fail beyond 8%"
+        }
+      },
+      {
+        "labels": [
+          "CreditModel"
+        ],
+        "relationship_path": [
+          "USES_CREDIT_MODEL"
+        ],
+        "properties": {
+          "name": "Require FX hedging program; audited coverage ratio >= 0.8"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Local guarantor required in each operating country"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Monitor trade finance line utilization monthly"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Cap uninsured export receivables at 20% of revenue"
+        }
+      },
+      {
+        "labels": [
+          "PricingAdjuster"
+        ],
+        "relationship_path": [
+          "HAS_PRICING_ADJUSTER"
+        ],
+        "properties": {
+          "rule": "-0.2% APR if hedged with rated counterparty"
+        }
+      },
+      {
+        "labels": [
+          "PricingAdjuster"
+        ],
+        "relationship_path": [
+          "HAS_PRICING_ADJUSTER"
+        ],
+        "properties": {
+          "rule": "+0.4% APR when receivables insurance absent"
+        }
+      }
+    ]
+  },
+  {
+    "question": "What credit requirements apply to retail BEV leases with loyalty rebates?",
+    "answer": "Using offer 'Retail BEV lease with loyalty rebate' for Prime retail customers on Compact battery electric cars, term 36 months at 3.9% APR with residual 55%. Early termination: 1-month fee if terminated after 18 months and vehicle resold within 45 days. Risk controls: Require home charging proof or workplace charging access, Cap balloon payment at 15% of MSRP. Pricing levers: -0.4% APR for OEM brand loyalty, +0.2% APR for rural postal codes without charging infra.",
+    "sources": [
+      {
+        "doc_id": "offer-retail-bev-lease",
+        "title": "Retail BEV lease with loyalty rebate",
+        "score": 0.3773,
+        "source": "AutoFinance Lab Q1/2025 demo dataset"
+      }
+    ],
+    "evidence": [
+      {
+        "labels": [
+          "Document"
+        ],
+        "relationship_path": [
+          "HAS_DOC"
+        ],
+        "properties": {
+          "id": "offer-retail-bev-lease",
+          "source": "AutoFinance Lab Q1/2025 demo dataset",
+          "text": "Retail BEV lease with loyalty rebate for Prime retail customers using Compact battery electric cars. Term 36 months, 12000 miles/year. Base APR 3.9%, residual 55%. Early termination: 1-month fee if terminated after 18 months and vehicle resold within 45 days. Risk rules: Require home charging proof or workplace charging access, Cap balloon payment at 15% of MSRP, If battery SOH < 80% at return, apply OEM-backed guarantee. Pricing adjusters: -0.4% APR for OEM brand loyalty, +0.2% APR for rural postal codes without charging infra. FAQ: Simplified retail lease for BEVs; emphasizes loyalty and charging readiness.",
+          "title": "Retail BEV lease with loyalty rebate"
+        }
+      },
+      {
+        "labels": [
+          "Segment"
+        ],
+        "relationship_path": [
+          "FOR_SEGMENT"
+        ],
+        "properties": {
+          "name": "Prime retail customers"
+        }
+      },
+      {
+        "labels": [
+          "Vehicle"
+        ],
+        "relationship_path": [
+          "FOR_VEHICLE"
+        ],
+        "properties": {
+          "type": "Compact battery electric cars"
+        }
+      },
+      {
+        "labels": [
+          "Policy"
+        ],
+        "relationship_path": [
+          "EARLY_TERMINATION"
+        ],
+        "properties": {
+          "name": "1-month fee if terminated after 18 months and vehicle resold within 45 days"
+        }
+      },
+      {
+        "labels": [
+          "CreditModel"
+        ],
+        "relationship_path": [
+          "USES_CREDIT_MODEL"
+        ],
+        "properties": {
+          "name": "Credit bureau score >= 700; delinquency-free past 24 months"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Require home charging proof or workplace charging access"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Cap balloon payment at 15% of MSRP"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "If battery SOH < 80% at return, apply OEM-backed guarantee"
+        }
+      },
+      {
+        "labels": [
+          "PricingAdjuster"
+        ],
+        "relationship_path": [
+          "HAS_PRICING_ADJUSTER"
+        ],
+        "properties": {
+          "rule": "-0.4% APR for OEM brand loyalty"
+        }
+      },
+      {
+        "labels": [
+          "PricingAdjuster"
+        ],
+        "relationship_path": [
+          "HAS_PRICING_ADJUSTER"
+        ],
+        "properties": {
+          "rule": "+0.2% APR for rural postal codes without charging infra"
+        }
+      }
+    ]
+  },
+  {
+    "question": "How are fast-approval LCV leases priced and what are the early return rules?",
+    "answer": "Using offer 'Fast-approval LCV lease' for Independent contractors on Light commercial vans, term 24 months at 7.2% APR with residual 50%. Early termination: Return anytime after 12 months; pay 1-month fee. Risk controls: Require GPS kill-switch consent, Income volatility >35% triggers manual review. Pricing levers: -0.3% APR with verified delivery platform contracts, +0.5% APR if FICO < 660.",
+    "sources": [
+      {
+        "doc_id": "offer-lcv-fast-approval",
+        "title": "Fast-approval LCV lease",
+        "score": 0.2526,
+        "source": "AutoFinance Lab Q1/2025 demo dataset"
+      }
+    ],
+    "evidence": [
+      {
+        "labels": [
+          "Document"
+        ],
+        "relationship_path": [
+          "HAS_DOC"
+        ],
+        "properties": {
+          "id": "offer-lcv-fast-approval",
+          "source": "AutoFinance Lab Q1/2025 demo dataset",
+          "text": "Fast-approval LCV lease for Independent contractors using Light commercial vans. Term 24 months, 18000 miles/year. Base APR 7.2%, residual 50%. Early termination: Return anytime after 12 months; pay 1-month fee. Risk rules: Require GPS kill-switch consent, Income volatility >35% triggers manual review, No repossessions in past 24 months. Pricing adjusters: -0.3% APR with verified delivery platform contracts, +0.5% APR if FICO < 660. FAQ: Optimized for gig drivers needing quick access to vans with minimal documentation.",
+          "title": "Fast-approval LCV lease"
+        }
+      },
+      {
+        "labels": [
+          "Segment"
+        ],
+        "relationship_path": [
+          "FOR_SEGMENT"
+        ],
+        "properties": {
+          "name": "Independent contractors"
+        }
+      },
+      {
+        "labels": [
+          "Vehicle"
+        ],
+        "relationship_path": [
+          "FOR_VEHICLE"
+        ],
+        "properties": {
+          "type": "Light commercial vans"
+        }
+      },
+      {
+        "labels": [
+          "Policy"
+        ],
+        "relationship_path": [
+          "EARLY_TERMINATION"
+        ],
+        "properties": {
+          "name": "Return anytime after 12 months; pay 1-month fee"
+        }
+      },
+      {
+        "labels": [
+          "CreditModel"
+        ],
+        "relationship_path": [
+          "USES_CREDIT_MODEL"
+        ],
+        "properties": {
+          "name": "Bank statements for last 6 months; average monthly inflow > $5k"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Require GPS kill-switch consent"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "Income volatility >35% triggers manual review"
+        }
+      },
+      {
+        "labels": [
+          "RiskRule"
+        ],
+        "relationship_path": [
+          "HAS_RISK_RULE"
+        ],
+        "properties": {
+          "rule": "No repossessions in past 24 months"
+        }
+      },
+      {
+        "labels": [
+          "PricingAdjuster"
+        ],
+        "relationship_path": [
+          "HAS_PRICING_ADJUSTER"
+        ],
+        "properties": {
+          "rule": "-0.3% APR with verified delivery platform contracts"
+        }
+      },
+      {
+        "labels": [
+          "PricingAdjuster"
+        ],
+        "relationship_path": [
+          "HAS_PRICING_ADJUSTER"
+        ],
+        "properties": {
+          "rule": "+0.5% APR if FICO < 660"
+        }
+      }
+    ]
+  }
+]
